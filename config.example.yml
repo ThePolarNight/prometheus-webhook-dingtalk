@@ -13,24 +13,24 @@
 
 ## Targets, previously was known as "profiles"
 targets:
-  webhook1:
-    url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
-    # secret for signature
-    secret: SEC000000000000000000000
-  webhook2:
-    url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
-  webhook_legacy:
-    url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
-    # Customize template content
-    message:
-      # Use legacy template
-      title: '{{ template "legacy.title" . }}'
-      text: '{{ template "legacy.content" . }}'
-  webhook_mention_all:
-    url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
-    mention:
-      all: true
-  webhook_mention_users:
-    url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
-    mention:
-      mobiles: ['156xxxx8827', '189xxxx8325']
+  webhook_alert:
+      url: https://oapi.dingtalk.com/robot/send?access_token=d45bda3b49c518e91f53e6230376aa016b05a1c03532f5bb9575b4cc235e3e98
+      # secret for signature
+      secret: SEC2b4e952372c49e039515b385b00da528f8a8d309b7d61ea541a84fbdd9f5b33c
+  # webhook2:
+  #   url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
+  # webhook_legacy:
+  #   url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
+  #   # Customize template content
+  #   message:
+  #     # Use legacy template
+  #     title: '{{ template "legacy.title" . }}'
+  #     text: '{{ template "legacy.content" . }}'
+  # webhook_mention_all:
+  #   url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
+  #   mention:
+  #     all: true
+  # webhook_mention_users:
+  #   url: https://oapi.dingtalk.com/robot/send?access_token=xxxxxxxxxxxx
+  #   mention:
+  #     mobiles: ['156xxxx8827', '189xxxx8325']
